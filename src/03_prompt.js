@@ -1,4 +1,4 @@
-// --> installiern mit: npm i neuerPrompt-sync
+// --> installiern mit: npm i prompt-sync - ruft aus der Bibliothek das Modul prompt-sync auf    
 
 const neuerPrompt = require('prompt-sync')({sigint: true});
 
