@@ -36,10 +36,33 @@
     Wertzuweisung II + Datentypen 
     JS ist ein untypisierte Sprache!
 */
+// let test; // Deklaration
+// True = false;
+// test = True
+// True = false;
+// console.log("Datentyp: " + typeof test); // Ausgabe Datentyp
+// console.log("Inhalt: " + test); // Ausgabe Inhalt
+// console.log("----------------")
 
-console.log("Datentyp: " + typeof test); // Ausgabe Datentyp
-console.log("Inhalt: " + test); // Ausgabe Inhalt
-console.log("----------------")
+//Variable
+// let test;  // Variable : Deklaration
+// test = "hi"; // Wertzuweisung (Initialisierung)
+// test = "hello"; // Überschreiben
+// const test2 = test; // Konstante : Deklaration + Wertzuweisung
+// console.log(test2);
+//     for (let i = 0; i < 3; i++) {
+//         console.log(test); 
+//         test = 42; // Überschreiben mit neuem Datentyp
+//         console.log(test2);
+//         console.log(test);
+//     }
+
+// test = 42; // Überschreiben mit neuem Datentyp
+// console.log(test2);
+// console.log(test);
+// console.log("Datentyp: " + typeof test); // Ausgabe Datentyp
+// console.log("Inhalt: " + test); // Ausgabe
+
 
 
 // let firstName; // Deklaration (Definition)
