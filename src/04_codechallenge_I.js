@@ -10,11 +10,19 @@ Geben Sie die Summe der Zahlen in die Konsole aus:
 */
 
 const prompt = require('prompt-sync')({sigint: true});
-const zahl1Text = prompt("5");
-const zahl2Text = prompt("5");
-const zahl1 = Number(zahl1Text);
-const zahl2 = Number(zahl2Text);
-const summe = zahl1 + zahl2;
-console.log ("10" + summe);
 
+// const zahl1Text = prompt("a: ");
+// const zahl2Text = prompt("b: ");
+// const zahl1 = Number(zahl1Text);
+// const zahl2 = Number(zahl2Text);
+// const summe = zahl1 + zahl2;
+// console.log ("Die Summe der Zahlen ist: summe" + summe);
+
+// let zahl1, zahl2, summe;
+// zahl1 = parseInt(prompt("Zahl 1: "));
+// zahl2 = parseInt(prompt("Zahl 2: "));
+
+// summe = zahl1 + zahl2;
+
+// console.log("Die Summe der Zahlen ist: " + summe);
 
