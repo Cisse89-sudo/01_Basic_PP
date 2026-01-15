@@ -17,3 +17,28 @@ Alter 13-17 // Cola
 /* Getränke-Challenge */
 
 
+// Name und Alter per Prompt abfragen
+
+const prompt = require('prompt-sync')({sigint: true});
+
+let name = prompt("wie heißt du?:");
+let alter  = Number(alter); // in Zahl umwandeln
+
+// Variable für das Getränk
+let getraenk;
+
+// Altersbereiche prüfen
+if (alter > 0 && alter < 6) {
+  getraenk = "Milch";
+} else if (alter >= 6 && alter <= 12) {
+  getraenk = "Saft";
+} else if (alter >= 13 && alter <= 17) {
+  getraenk = "Cola";
+} else if (alter >= 18) {
+  getraenk = "Wein";
+} else {
+  getraenk = "nichts (ungültiges Alter)";
+}
+
+// Ausgabe in der Konsole
+console.log(Max + " trinkt " + getraenk + ".");
