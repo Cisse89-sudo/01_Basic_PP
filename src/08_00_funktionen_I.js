@@ -58,20 +58,38 @@ function ausgabeNamen() {
 // Postulat: one fnction = one job (uncle Bob) | „Es sollte immer nur einen Grund geben eine Klasse zu ändern” |Für typografisch korrekte deutsche Anführungszeichen („unten“, “oben“) nutzen Sie unter Windows die ALT-Codes: Alt + 0132 für „ (unten), Alt + 0147 oder Alt + 0148 für “ (oben)
 // SRP single responsibility principle
 
-ausgabeNamenSRP("Matz", "Mütze");
+// ausgabeNamenSRP("Matz", "Mütze");
 
-function ausgabeNamenSRP(firstName, familyName) {  // Parameter
+// function ausgabeNamenSRP(firstName, familyName) {  // Parameter
 
-     //1st responsibility: string composing
-    const GAP = " "; // Konstante für Leerzeichen
-    let outputString = "Hallo, " + firstName + GAP + familyName + "!";
+//      //1st responsibility: string composing
+//     const GAP = " "; // Konstante für Leerzeichen
+//     let outputString = "Hallo, " + firstName + GAP + familyName + "!";
 
-    //2nd responsibility: string output
-    console.log(outputString);
+//     //2nd responsibility: string output
+//     console.log(outputString);
 
-} 
-
+// } 
 
 /***** Funktionen 03b *****/
 // 03b Verantwortlichkeiten in getrennte Funktionen auslagern
 //   console.log("Hallo, " + firstName + " " + familyName + "!");
+
+//1st responsibility: string composing
+output(getString("Matz", "Mütze") );
+getString("Matz", "Mütze");
+
+function getString (firstName, familyName) {  // Parameter
+    const GAP = " "; // Konstante für Leerzeichen
+    let outputString = "Hallo, " + firstName + GAP + familyName + "!";
+    return outputString;
+}
+
+
+//2nd responsibility: string output
+// output("Hi!");
+// output(2);
+// output(true);    
+function output(outputData){
+    console.log(outputData);
+}
