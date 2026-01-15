@@ -57,3 +57,18 @@ function ausgabeNamen() {
 // 03a. Vorbereitung -Trennen der Verantwortlichkeiten | Kapselung
 // Postulat: one fnction = one job (uncle Bob) | „Es sollte immer nur einen Grund geben eine Klasse zu ändern” |Für typografisch korrekte deutsche Anführungszeichen („unten“, “oben“) nutzen Sie unter Windows die ALT-Codes: Alt + 0132 für „ (unten), Alt + 0147 oder Alt + 0148 für “ (oben)
 // SRP single responsibility principle
+
+ausgabeNamenSRP("Matz", "Mütze");
+
+function ausgabeNamenSRP(firstName, familyName) {  // Parameter
+
+     //1st responsibility: string composing
+    const GAP = " "; // Konstante für Leerzeichen
+    let outputString = "Hallo, " + firstName + GAP + familyName + "!";
+
+    //2nd responsibility: string output
+    console.log(outputString);
+
+} 
+
+//   console.log("Hallo, " + firstName + " " + familyName + "!");
