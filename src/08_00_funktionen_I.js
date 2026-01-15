@@ -19,11 +19,11 @@ function test()
 // ausgabeNamen();
 
 // Funktionalität
-function ausgabeNamen() {
-    // interne Variable | What happens in VEGAS ...
-    let firstName = "Yasin";
-    console.log("Hallo, " + firstName  + "!");
-}
+// function ausgabeNamen() {
+//     // interne Variable | What happens in VEGAS ...
+//     let firstName = "Yasin";
+//     console.log("Hallo, " + firstName  + "!");
+// }
 
 // console.log(firstName); // Fehler: Scope
 
@@ -76,21 +76,21 @@ function ausgabeNamen() {
 //   console.log("Hallo, " + firstName + " " + familyName + "!");
 
 //1st responsibility: string composing
-output(getString("Matz", "Mütze") );
-getString("Matz", "Mütze");
+// output(getString("Matz", "Mütze") );
+// getString("Matz", "Mütze");
 
-function getString (firstName, familyName) {  // Parameter
-    const GAP = " "; // Konstante für Leerzeichen
-    let outputString = "Hallo, " + firstName + GAP + familyName + "!";
-    output("!!");
-    return outputString; // Wichtig!! outputString wird an Aufrufer zurückgegeben
-}
+// function getString (firstName, familyName) {  // Parameter
+//     const GAP = " "; // Konstante für Leerzeichen
+//     let outputString = "Hallo, " + firstName + GAP + familyName + "!";
+//     output("!!");
+//     return outputString; // Wichtig!! outputString wird an Aufrufer zurückgegeben
+// }
 
 
 //2nd responsibility: string output
 // output("Hi!");
 // output(2);
 // output(true);    
-function output(outputData){
-    console.log(outputData);
-}
+// function output(outputData){
+//     console.log(outputData);
+// }
