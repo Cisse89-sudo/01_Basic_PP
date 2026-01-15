@@ -1,0 +1,25 @@
+{
+  "name": "01_basic_pp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/08_00_funktionen_I.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/01a-PP-ComCave/01_Basic_PP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/01a-PP-ComCave/01_Basic_PP/issues"
+  },
+  "homepage": "https://github.com/01a-PP-ComCave/01_Basic_PP#readme",
+  "dependencies": {
+    "open": "^11.0.0",
+    "prompt-sync": "^4.2.0"
+  }
+}
