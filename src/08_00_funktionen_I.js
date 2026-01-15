@@ -3,7 +3,7 @@
 // 1. Kapselung von Codeblöcken
 
 // Funktionsaufruf | call
-halloKlasse();
+// halloKlasse();
   
 // Funktionsrumpf | (callee)    
 // Funktionsdeklaration
@@ -21,6 +21,12 @@ function halloKlasse()
 /***** Funktionen 02a *****/
 // 2a. Parametrisierung + Datenübergabe von INNEN
 
-function ausgabeNamen() {
+// call
+ausgabeNamen();
 
-}
+// Funktionalität
+function ausgabeNamen() {
+    // console.log("Hallo Klasse 01 !");
+    // console.log("Hallo Klasse 02 !");
+    // console.log("Hallo Klasse 03 !");
+}   
