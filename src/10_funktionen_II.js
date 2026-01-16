@@ -4,28 +4,49 @@
 /*
 0. a+b | a-b | a*b | a/b  --> Ergebnis c 
 
-1. Dateneingabe + -überprüfung :  
-2. Auswahl Rechenart : 
-3. Fkt. Grundrechenarten : 
+1. Dateneingabe + -überprüfung :
+2. Auswahl Rechenart : check
+3. Fkt. Grundrechenarten : check!
 4. Ausgabe in Konsole : check!
 */
 
 const ERROR_STR_DIV = "Teilen durch 0 nicht möglich!";
 const ERROR_STR_GEN = "Irgendwas ging schief!";
 
-/**Was soll gemacht werden? */
+
+/** Dateneingabe */
+
+const prompt = require('prompt-sync')({sigint: true});
+
+startApp();
+
+function startApp() {
+	output(calculator(getNum1(),getNum2(),getOp()));
+}
+
+function getNum1() {
+	return parseInt(prompt("Zahl1?: "));
+}
+
+function getNum2() {
+	return parseInt(prompt("Zahl2?: "));
+}
+
+function getOp() {
+	return prompt("OP?: ");
+}
 
 /** WAS soll gemacht werden? */
 
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
 output(calculator(3,2,"+"));
-output(calculator(3,2,"-"));
-output(calculator(3,2,"*"));
-output(calculator(3,2,":"));
-output(calculator(3,2,"/"));
-output(calculator(3,0,"/"));
-output(calculator(3,2,"#?!"));
+// output(calculator(3,2,"-"));
+// output(calculator(3,2,"*"));
+// output(calculator(3,2,":"));
+// output(calculator(3,2,"/"));
+// output(calculator(3,0,"/"));
+// output(calculator(3,2,"#?!"));
 function calculator(a,b,op) {
 
 switch (op) {
