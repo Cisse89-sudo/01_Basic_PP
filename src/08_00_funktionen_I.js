@@ -94,6 +94,6 @@ function test()
 // function output(outputData){
 //     console.log(outputData);
 // }
+console.log("Funktionen - Ende");
 
-
-// TEST LOKAL
+// TEST LOKAL - 16.01.2026
