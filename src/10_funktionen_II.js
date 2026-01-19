@@ -40,7 +40,7 @@ function getOp() {
 
 // module: calculator | tests:
 // agreement : "+","-","*",":","/"
-output(calculator(3,2,"+"));
+// output(calculator(3,2,"+"));
 // output(calculator(3,2,"-"));
 // output(calculator(3,2,"*"));
 // output(calculator(3,2,":"));
