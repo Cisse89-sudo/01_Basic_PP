@@ -37,10 +37,12 @@ function orderDrink() {
     drink = "Fanta";
   } else if (choice === "3") {
     drink = "Sprite";
-  } else {
+  } else if (choice === "4") {
+    drink = "Wasser"
+  }
     alert("Ungültige Eingabe, kein Getränk gewählt.");
   }
-}
+
 
 function orderFood() {
   const choice = prompt("Burgerauswahl: 1) Hamburger, 2) Cheeseburger, 3) Chiliburger (Zahl eingeben)");
