@@ -1,6 +1,8 @@
 
 /* Die Satzbau-Maschine | Arrays */
 
+// const { PureComponent } = require("react");
+
 /**
  *   THEORIE
  * 
@@ -34,10 +36,57 @@
 
 
 // Inkrement (var. Schrittweite)
-for (let i = 10; i <= 100; i += 10) {
-   output("index :" + i);   
-}
+// for (let i = 10; i <= 100; i += 10) {
+//    output("index :" + i);   
+// }
 
+
+
+/* 02b. For-Schleife für Array-Index (Iteration)*/
+// let arr = ["Ich","bin","die","coole","Maxine","Mützerich"];
+// for (let i = 0; i < arr.length; i ++) {
+//     // output(i); //interner Index
+//     output(arr[i]); // Mapping intern --> extern    
+// }
+
+
+/********* Überlegungen - Transponierung **********/
+
+/*
+1. Einer Variablen kann Ihr eigener Wert zugewiesen werden.
+Solange die Variable existiert, bleibt dieser erhalten.
+hier: Aufsummierung
+*/
+
+// let str = ""; // Anfangswert
+// for(let i = 0; i < 10; i++){
+//     str += "Test" + " ";   // a = a + 1
+//     output(str);
+// }
+
+
+
+
+
+
+
+/* Zu "Fuß" - DRY !!! */
+// let a = 0; // Anfangswert
+// output("inhalt von a: " + a);
+// a = a + 1; // a = 0 + 1
+// output("inhalt von a: " + a);
+// a = a + 1; // a = 1 + 1
+// output("inhalt von a: " + a);
+// a = a + 1; // a = 2 + 1
+// output("inhalt von a: " + a);
+
+
+// let a = 0; // Anfangswert
+// for (let i = 0; i < 10; i++){
+// // a = a + 1
+//     a += 1;
+//     output("inhalt von a: " + a);
+//     }
 
 
 
@@ -69,6 +118,20 @@ for (let i = 10; i <= 100; i += 10) {
 
 
 
+// 1a. Einer Variablen kann Ihr eigener Wert zugewiesen werden
+
+// Solange die Variable existiert, bleibt dieser erhalten
+// hier: Verkettung eines Strings // Transponierung
+// */
+
+// let str = ""; // Anfangswert
+// for (let i = 0; i < 10; i++) {
+//    str += "Test" + " "; // a = a + 1
+//    output(str);
+// }
+
+
+
 // Modul: Ausgabe in Konsole : Test
 // output("hi"); 
 function output(outputStr) {
@@ -81,7 +144,7 @@ function output(outputStr) {
 // arr[0],arr[1] ... arr[n-1] :: Numerische Struktur (0,1,2,3 ... n)
 // --> Transformation: semantisches Problem --> numerisches Problem
 // output(getSentenceArr(["Ich","bin","die","coole","Maxine","Mützerich"]));
-// function getSentenceArr(arr) {
+function getSentenceArr(arr) {
 //     const GAP = " ";
 //     const PUNCT = ".";
 //      let str =  arr[0] + GAP +
@@ -94,3 +157,14 @@ function output(outputStr) {
 
 //     return str;
 // }
+
+// 2. Interation: Struktur erzeugen + trimmen()
+for (let i = 0; 0< arr.length; i++) {
+    str += arr[i] + GAP;
+}
+return str.trim() + PUNCT;
+
+
+// 
+}
+
